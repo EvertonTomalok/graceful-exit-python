@@ -6,7 +6,7 @@ from src.helpers.runner import create_runner_with_signal_to_stop
 
 logging.basicConfig(
     format='[%(levelname)s][%(asctime)s] %(filename)s - %(message)s',
-    level=os.environ.get("LOGLEVEL", "INFO")
+    level=os.environ.get("LOGLEVEL", "INFO"),
 )
 
 

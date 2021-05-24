@@ -4,7 +4,7 @@ import os
 from src.usecases.number_generator import SimpleLoopNumberGenerator
 
 logging.basicConfig(
-    format='[%(levelname)s][%(asctime)s] %(filename)s - %(message)s',
+    format="[%(levelname)s][%(asctime)s] %(filename)s - %(message)s",
     level=os.environ.get("LOGLEVEL", "INFO"),
 )
 

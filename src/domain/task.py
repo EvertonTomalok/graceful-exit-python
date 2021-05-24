@@ -1,5 +1,5 @@
-from time import sleep
 import logging
+from time import sleep
 
 from src.helpers.producer import produce_random_num
 

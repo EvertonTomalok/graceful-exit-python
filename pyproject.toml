@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "graceful-exit-python"
+version = "0.1.0"
+description = ""
+authors = ["Everton Tomalok <evertontomalok123@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+black = "^21.5b1"
+mypy = "^0.812"
+flake8 = "^3.9.2"
+isort = "^5.8.0"
+autoflake = "^1.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,7 +1,7 @@
 import logging
 import os
 
-from src.usecases.number_generator import SimpleNumberGenerator
+from src.usecases.number_generator import SimpleLoopNumberGenerator
 
 logging.basicConfig(
     format='[%(levelname)s][%(asctime)s] %(filename)s - %(message)s',
@@ -10,7 +10,7 @@ logging.basicConfig(
 
 
 def start():
-    SimpleNumberGenerator.run()
+    SimpleLoopNumberGenerator.run()
 
 
 if __name__ == "__main__":

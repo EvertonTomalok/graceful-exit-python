@@ -26,8 +26,6 @@ jobs:
         python -m pip install --upgrade pip
         python -m pip install poetry
         poetry install
-      env:
-        POETRY_VIRTUALENVS_CREATE: false
 
     - name: Lint
       run: |

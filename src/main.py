@@ -1,8 +1,7 @@
 import logging
 import os
 
-from src.domain.task import busy_work
-from src.helpers.runner import create_runner_with_signal_to_stop
+from src.usecases.number_generator import SimpleNumberGenerator
 
 logging.basicConfig(
     format='[%(levelname)s][%(asctime)s] %(filename)s - %(message)s',
@@ -11,8 +10,7 @@ logging.basicConfig(
 
 
 def start():
-    runner = create_runner_with_signal_to_stop()
-    runner.run(busy_work, 2)
+    SimpleNumberGenerator.run()
 
 
 if __name__ == "__main__":

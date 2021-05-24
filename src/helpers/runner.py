@@ -12,7 +12,7 @@ class Runner:
             task(*args, **kwargs)
 
     def stop(self, signal_received, frame):
-        logging.warning(f"Graceful exiting ...")
+        logging.warning("Graceful exiting ...")
         self.stopped = True
 
 

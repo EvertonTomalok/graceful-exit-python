@@ -5,7 +5,7 @@ from collections import Callable
 from termcolor import colored
 
 
-class Runner:
+class LoopRunner:
     def __init__(self):
         self.stopped = False
 
@@ -18,10 +18,10 @@ class Runner:
         self.stopped = True
 
 
-def create_runner_with_signal_to_stop() -> Runner:
-    runner = Runner()
+def create_loop_runner_with_signal_to_stop() -> LoopRunner:
+    loop_runner = LoopRunner()
 
-    signal.signal(signal.SIGINT, runner.stop)
-    signal.signal(signal.SIGTERM, runner.stop)
+    signal.signal(signal.SIGINT, loop_runner.stop)
+    signal.signal(signal.SIGTERM, loop_runner.stop)
 
-    return runner
+    return loop_runner

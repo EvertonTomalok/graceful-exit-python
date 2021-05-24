@@ -6,6 +6,7 @@ authors = ["Everton Tomalok <evertontomalok123@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+termcolor = "^1.1.0"
 
 [tool.poetry.dev-dependencies]
 black = "^21.5b1"

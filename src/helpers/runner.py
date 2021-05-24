@@ -1,6 +1,7 @@
 import logging
 import signal
 from collections import Callable
+from termcolor import colored
 
 
 class Runner:
@@ -12,7 +13,7 @@ class Runner:
             task(*args, **kwargs)
 
     def stop(self, signal_received, frame):
-        logging.warning("Graceful exiting ...")
+        logging.warning(colored("Graceful exiting ...", "green", attrs=["bold"]))
         self.stopped = True
 
 
